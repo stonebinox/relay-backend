@@ -10,3 +10,5 @@ app.get("/scan", scanController.scanItem.bind(scanController));
 app.listen(port, () => {
   console.log(`server running at http://localhost:${port}`);
 });
+
+export default app;
