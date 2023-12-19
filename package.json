@@ -1,0 +1,22 @@
+{
+  "name": "relay-backend",
+  "version": "1.0.0",
+  "description": "Backend repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node_modules/.bin/nodemon index.js --exec babel-node --"
+  },
+  "keywords": [],
+  "author": "Anoop Santhanam",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4",
+    "braces": ">=2.3.1"
+  }
+}
