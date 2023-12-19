@@ -26,4 +26,12 @@ describe("Route tests", () => {
       message: "Invalid item SKU",
     });
   });
+
+  test("any other route returns failure", async () => {
+    let response = await request(app).get("/");
+    expect(response.status).toBe(404);
+
+    response = await request(app).get("/unreachable");
+    expect(response.status).toBe(404);
+  });
 });
