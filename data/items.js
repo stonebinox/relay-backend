@@ -6,7 +6,7 @@ export const items = [
     currency: "USD",
     discountRules: {
       type: "price",
-      minQty: 5,
+      minQty: 4,
       discountPricePerItem: 499.99,
     },
   },
@@ -17,11 +17,12 @@ export const items = [
     currency: "USD",
     discountRules: {
       type: "item",
-      minQty: 1,
+      minQty: 0,
       items: [
         {
           itemSku: "vga",
           itemQty: 1,
+          price: 0.0,
         },
       ],
     },
@@ -33,7 +34,7 @@ export const items = [
     currency: "USD",
     discountRules: {
       type: "qty",
-      minQty: 3,
+      minQty: 2,
     },
   },
   {
