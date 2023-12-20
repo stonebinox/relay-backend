@@ -23,6 +23,7 @@ export const items = [
           itemSku: "vga",
           itemQty: 1,
           price: 0.0,
+          parent: "mbp", // to track if deleting the parent item
         },
       ],
     },
